@@ -21,4 +21,9 @@ class UuidValueObject extends StringValueObject
             throw new InvalidUuidValueObject($value);
         }
     }
+
+    public static function random(): self
+    {
+        return new UuidValueObject(RamseyUuid::uuid4()->toString());
+    }
 }
