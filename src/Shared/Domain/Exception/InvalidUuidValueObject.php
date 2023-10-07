@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Shared\Domain\Exception;
+namespace Shared\Domain\Exception;
 
 use DomainException;
 
-final class InvalidUuid extends DomainException
+final class InvalidUuidValueObject extends DomainException
 {
     public function __construct(string $value)
     {

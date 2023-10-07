@@ -8,8 +8,8 @@ doctrine:
         naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
         auto_mapping: true
         mappings:
-            App\Shared\Domain:
+            Shared\Domain:
                 is_bundle: false
                 type: xml
                 dir: '%kernel.project_dir%/src/Shared/Infrastructure/Doctrine/Mappings'
-                prefix: 'App\Shared\Domain'
+                prefix: 'Shared\Domain'
